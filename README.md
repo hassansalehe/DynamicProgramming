@@ -7,9 +7,9 @@ This repositry containts practice solutions to some of the dynamic programming p
 * solution implementation
 * unit tests using Google Test
 
-### How to run build the solutions and run unit tests
+### How to build the C++ solutions and run unit tests
 #### Prerequisites
-* C++ compiler, this code has been tested with [GCC](https://gcc.gnu.org/)
+* C++ compiler, preferably [GCC](https://gcc.gnu.org/)
 * [Cmake](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
 * [GoogleTest](https://github.com/google/googletest)
 
