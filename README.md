@@ -20,3 +20,6 @@ This repositry containts practice solutions to some of the dynamic programming p
 4. Run Cmake to generate makefiles. `cmake ..`
 5. Build. `make`
 6. Run the unit tests. E.g; `./Fibonacci/Fibonacci` for running Fibonacci tests
+
+### License
+[MIT License](https://github.com/hassansalehe/DynamicProgramming/blob/main/LICENSE)
