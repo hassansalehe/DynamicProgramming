@@ -12,3 +12,5 @@ add_executable(Fibonacci FibonacciUTs.cpp Fibonacci.cpp)
 
 # link executable with googletest and pthread library
 target_link_libraries(Fibonacci ${GTEST_LIBRARIES} pthread gtest_main)
+
+add_test(test_fibonacci Fibonacci)
