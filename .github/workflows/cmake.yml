@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Install gtest manually
-      run: sudo apt install googletest && cd /usr/src/googletest && sudo cmake CMakeLists.txt && sudo make && find -name '*.a' -exec cp {} /usr/lib/ \; && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
+      run: sudo apt install googletest && cd /usr/src/googletest && sudo cmake CMakeLists.txt && sudo make && find -name '*.a' -exec cp {} /usr/lib/ \; && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a && cp -r googletest/include/gtest /usr/local/include
     - uses: actions/checkout@v2
 
     - name: Create Build Environment
