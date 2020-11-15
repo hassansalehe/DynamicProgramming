@@ -1,5 +1,5 @@
-#ifndef _01_FIBONACCI_
-#define _01_FIBONACCI_
+#ifndef _FIBONACCI_
+#define _FIBONACCI_
 
 using ullong = unsigned long long;
 
