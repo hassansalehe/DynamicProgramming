@@ -5,11 +5,20 @@
 
 using price_value_pair = std::pair<std::vector<int>, int>;
 
-class TestStockMarket : public ::testing::TestWithParam< price_value_pair > { };
+class TestStockMarket : public ::testing::TestWithParam< price_value_pair > {
+
+protected:
+    void printInputSummary(size_t input_size, int expected_max_profit) {
+        std::cout << "[          ] Input size: " << input_size  << ", ";
+        std::cout << "expected max profit: " << expected_max_profit << std::endl;
+    }
+};
 
 TEST_P(TestStockMarket, checkStockMarketReturnsExpectedResult) {
     auto prices = std::get<0>(GetParam());
     auto total_value = std::get<1>(GetParam());
+
+    printInputSummary(prices.size(), total_value);
 
     ASSERT_EQ(total_value, StockMarket(prices));
 }
