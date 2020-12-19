@@ -19,7 +19,8 @@ This repositry containts practice solutions to some of the dynamic programming p
 3. Navigate to folder created in step 2. `cd build`
 4. Run Cmake to generate makefiles. `cmake ..`
 5. Build. `make`
-6. Run the unit tests. E.g; `./Fibonacci/Fibonacci` for running Fibonacci tests
+6. Run the unit tests. E.g; `./Fibonacci/Fibonacci` for running Fibonacci tests.
+   You can run all tests with a command `ctest -V` while in folder `build`.
 
 ### License
 [MIT License](https://github.com/hassansalehe/DynamicProgramming/blob/main/LICENSE)
