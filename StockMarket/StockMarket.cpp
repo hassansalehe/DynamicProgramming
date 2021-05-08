@@ -1,15 +1,3 @@
-// Start from the end
-// for at position i:
-// - Find the max from the list i+1 ... n
-// - calculate the profit. 
-// - Update the max profit.
-
-// Base case:
-// i == n:
-// max_profit = 0
-// max value = v[i]
-// 
-
 #include <vector>
 #include <algorithm>
 
