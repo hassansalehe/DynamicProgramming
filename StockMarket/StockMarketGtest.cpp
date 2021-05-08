@@ -15,8 +15,8 @@ protected:
 };
 
 TEST_P(TestStockMarket, checkStockMarketReturnsExpectedResult) {
-    auto prices = std::get<0>(GetParam());
-    auto total_value = std::get<1>(GetParam());
+    const auto prices = std::get<0>(GetParam());
+    const auto total_value = std::get<1>(GetParam());
 
     printInputSummary(prices.size(), total_value);
 
